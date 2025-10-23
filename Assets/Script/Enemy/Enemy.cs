@@ -15,6 +15,8 @@ public abstract class Enemy : MonoBehaviour
     public Bullet bulletPrefab;
 
     public abstract IEnumerator Attack();
+
+    public abstract void Shoot();
     public abstract void Dead();
     
 }
