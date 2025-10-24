@@ -8,6 +8,7 @@ public class PlayerStats : ScriptableObject
     public float tear = 3;
     public int luck = 5;
     public float moveSpeed = 5f;
+    public int damage;
 
     public float delay { get { return (16 - tear * 1.3f); }}
 

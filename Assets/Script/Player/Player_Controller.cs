@@ -14,40 +14,52 @@ public class Player_Controller : MonoBehaviour
     private int hp;
     private int level;
     private int exp;
-    private bool mouseDown;
+    private bool attackDown;
     private Coroutine fireCoroutine;
+
+    float fireInterval;
+    float attackCooltime;
+
+     
+
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         hp = stat.maxHealth;
-
+        
 
     }
     void Attack()
-{
-    if (Input.GetKeyDown(KeyCode.Z))
     {
-        mouseDown = true;
-        if (fireCoroutine == null)
-            fireCoroutine = StartCoroutine(Fire());
-    }
-
-    if (Input.GetKeyUp(KeyCode.Z))
-    {
-        mouseDown = false;
-        if (fireCoroutine != null)
-        {
-            StopCoroutine(fireCoroutine);
-            fireCoroutine = null;
+        if (Input.GetKeyDown(KeyCode.Z)&&attackCooltime<=0f)
+        {   
+            attackDown = true;
+            if (fireCoroutine == null)
+                fireCoroutine = StartCoroutine(Fire());
         }
+
+        if (Input.GetKeyUp(KeyCode.Z))
+        {
+            attackDown = false;
+            
+            if (fireCoroutine != null)
+            {
+                StopCoroutine(fireCoroutine);
+                attackCooltime = fireInterval;
+                fireCoroutine = null;
+            }
+        }
+
+        if (attackCooltime >= 0) attackCooltime -= Time.deltaTime;
     }
-}
 
 
     void Update()
     {
         Attack();
+        fireInterval = 1f / stat.tear;
     }
     void FixedUpdate()
     {
@@ -66,10 +78,10 @@ public class Player_Controller : MonoBehaviour
 
     IEnumerator Fire()
     {
-        while (mouseDown)
+        while (attackDown)
         {
-            Instantiate(bullet, transform.position, Quaternion.identity);
-            float fireInterval = 1f / stat.tear;
+            GameObject b = Instantiate(bullet, transform.position, Quaternion.identity);
+            
             yield return new WaitForSeconds(fireInterval);
         }
 
@@ -79,11 +91,14 @@ public class Player_Controller : MonoBehaviour
     {
         stat.tear++;
     }
-
+    public void GetDamage(int damage)
+    {
+        hp -= damage;
+    }
 
     void LevelUp()
     {
-        
+        level++;
     }
     void LevelCheck(int level)
     {
