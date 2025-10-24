@@ -29,7 +29,7 @@ public class Button_System : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     }
     public void StartGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("PlayScene");
     }
     public void HelpGame(bool ch)
     {
