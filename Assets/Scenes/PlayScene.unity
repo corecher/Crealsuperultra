@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 160885486}
   - component: {fileID: 160885485}
   m_Layer: 0
-  m_Name: Nebula - The Grey Room _ Density & Time
+  m_Name: BackGroundMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -382,7 +382,7 @@ GameObject:
   - component: {fileID: 1916295761}
   - component: {fileID: 1916295760}
   m_Layer: 0
-  m_Name: 5440725_0
+  m_Name: BackGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -453,7 +453,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
