@@ -257,6 +257,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 195020175}
+  - component: {fileID: 195020176}
   m_Layer: 0
   m_Name: WaveManager
   m_TagString: Untagged
@@ -279,6 +280,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &195020176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195020174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55ddf3571f70134ab1f055a8ab60534, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy:
+  - {fileID: 2998488796770433647, guid: 5dbfb34a4e8022847a81a64ec4e02e28, type: 3}
+  posY: fcfffffffdfffffffeffffffffffffff0000000001000000020000000300000004000000
+  posX: 02000000040000000600000008000000
+  waveCount: 0
+  enemyspCount: 0
+  enemyCount: 0
 --- !u!1 &999023662
 GameObject:
   m_ObjectHideFlags: 0

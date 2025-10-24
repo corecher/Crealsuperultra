@@ -16,12 +16,10 @@ public class Tutorial : MonoBehaviour
         Vector2 pos = transform.position;
         if(upDown)
         {
-            pos.x+=Time.deltaTime;
             pos.y+=Time.deltaTime;
         }
         else
         {
-            pos.x-=Time.deltaTime;
             pos.y-=Time.deltaTime;
         }
         transform.position=pos;

@@ -104,7 +104,7 @@ MonoBehaviour:
   quality: 1
   hp: 20
   minInterval: 1
-  maxInterval: 3
+  maxInterval: 7
   interval: 0
   wave: 1
   bulletPrefab: {fileID: 682532675974285854, guid: daba8f0ae02a8fc4fbe3408f9db1abc4, type: 3}

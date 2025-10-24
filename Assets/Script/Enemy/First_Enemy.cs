@@ -13,8 +13,6 @@ public class First_Enemy : Enemy
 
         animator = GetComponent<Animator>();
         attackCoroutine = StartCoroutine(Attack());
-
-        Dead();
     }
 
     private void Update()
