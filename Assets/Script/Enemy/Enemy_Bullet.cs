@@ -5,7 +5,7 @@ public class Bullet : MonoBehaviour
 
     [SerializeField] float speed;
     [SerializeField] float destroyTime;
-    [SerializeField] int wave; //웨이브는 도대체 누가 구현하며 어디서 받아야하느냔 말이야!!!
+    [SerializeField] int wave; //병합 과정에서 GameManager.instance.wave로 대체
 
     void Start()
     {
