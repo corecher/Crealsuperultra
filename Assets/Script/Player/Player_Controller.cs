@@ -14,6 +14,7 @@ public class Player_Controller : MonoBehaviour
     private int hp;
     private int level;
     private int exp;
+
     private bool attackDown;
     private Coroutine fireCoroutine;
 
@@ -81,16 +82,13 @@ public class Player_Controller : MonoBehaviour
         while (attackDown)
         {
             GameObject b = Instantiate(bullet, transform.position, Quaternion.identity);
-            
+            b.GetComponent<Player_bullet>().bullet_damage = stat.damage;
             yield return new WaitForSeconds(fireInterval);
         }
 
         fireCoroutine = null;
     }
-    void UpgradeTear()
-    {
-        stat.tear++;
-    }
+    
     public void GetDamage(int damage)
     {
         hp -= damage;
