@@ -11,7 +11,7 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] PlayerStats stat;
     [SerializeField] GameObject bullet;
 
-    private int hp;
+    public int hp;
     private int level;
     private int exp;
 
