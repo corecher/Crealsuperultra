@@ -7,9 +7,9 @@ public class PlayerStats : ScriptableObject
     [Header("Base Stats")]
     public int maxHealth = 6;
     public float tear = 3;
-    public int luck = 5;
+    
     public float moveSpeed = 5f;
-    public float damage;
+    
 
     
 
@@ -22,7 +22,7 @@ public class PlayerStats : ScriptableObject
 
 
 
-     public List<Item> items = new List<Item>();
+     public Dictionary<string,int> items = new Dictionary<string,int>();
 
     
 

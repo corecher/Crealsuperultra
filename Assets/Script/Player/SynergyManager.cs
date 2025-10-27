@@ -1,58 +1,51 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SynergyManager
 {
-    private List<string> vistied = new List<string>();
+    private string[] Engines = { "Turbo Engine", "Rocket Engine", "Jet Engine" };
+    private string[] Cannons = { "Ruster Cannon", "Triple Cannon" };
 
-    private PlayerStats player;
+    private PlayerStats playerStats;
+    private BulletStats bulletStats;
 
-    public SynergyManager(PlayerStats player)
+    public SynergyManager(PlayerStats playerStats, BulletStats bulletStats)
     {
-        this.player = player;
+        this.playerStats = playerStats;
+        this.bulletStats = bulletStats;
     }
 
-    ///<summary>
-    ///시너지 아이템이 다 모였는지 체크
-    ///</summary>
-    public void CheckSynergies()
+    public void CheckSynergy()
     {
-        Dictionary<string, int> itemTypeCount = new Dictionary<string, int>();
-
-        foreach (var item in player.items)
+        if (EngineSynergy())
         {
-            if (!vistied.Contains(item.name))//이러면 중복 방지가 되겠죠잉?
-            {
-                if (!itemTypeCount.ContainsKey(item.itemType))
-                {
-                    itemTypeCount[item.itemType] = 0;
-                }
-                itemTypeCount[item.itemType]++;
-                vistied.Add(item.name);
-            }
-
+            playerStats.maxHealth++;
+            bulletStats.bulletDamage++;
+            bulletStats.luck++;
+            playerStats.tear++;
+            Debug.Log("엔진 시너지 발동");
         }
 
-        // --- 엔진 시너지 ---
-        if (HasAll(itemTypeCount, "엔진", 3))
+        if (CannonSynergy())
         {
-            player.damage += 1;
-            player.tear += 1;
-            player.luck += 1;
-            player.maxHealth += 1;
-            Debug.Log("엔진 시너지 발동!");
-        }
-
-        // --- 캐논 시너지 ---
-        if (HasAll(itemTypeCount, "캐논", 2))
-        {
-            Debug.Log("캐논 시너지 발동! 4방향 발사");
-            // 탄환 시스템에서 방향 4개로 설정
+            Debug.Log("캐논 시너지 발동");
         }
     }
 
-    private bool HasAll(Dictionary<string, int> dict, string itemType, int required)
+    public bool EngineSynergy()
     {
-        return dict.ContainsKey(itemType) && dict[itemType] >= required;
+        foreach (string e in Engines)
+        {
+            if (!playerStats.items.ContainsKey(e)||playerStats.items[e] <= 0) return false;
+        }
+        return true;
+    }
+    
+    public bool CannonSynergy()
+    {
+        foreach (string e in Cannons)
+        {
+            if (!playerStats.items.ContainsKey(e)||playerStats.items[e] <= 0) return false;
+        }
+        return true;
     }
 }

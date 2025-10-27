@@ -9,6 +9,8 @@ public class Player_Controller : MonoBehaviour
     Rigidbody2D rb;
 
     [SerializeField] PlayerStats stat;
+
+    [SerializeField] BulletStats bulletStat;
     [SerializeField] GameObject bullet;
 
     public int hp;
@@ -21,14 +23,16 @@ public class Player_Controller : MonoBehaviour
     float fireInterval;
     float attackCooltime;
 
+
+
     
 
      
-    private SynergyManager synergyManager;
+    //private SynergyManager synergyManager;
 
     void Start()
     {
-        synergyManager = new SynergyManager(this.stat);
+        
     }
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -89,7 +93,7 @@ public class Player_Controller : MonoBehaviour
         while (attackDown)
         {
             GameObject b = Instantiate(bullet, transform.position, Quaternion.identity);
-            b.GetComponent<Player_bullet>().bullet_damage = stat.damage;
+            b.GetComponent<Player_bullet>().bulletstat = bulletStat;
             yield return new WaitForSeconds(fireInterval);
         }
 
@@ -119,50 +123,49 @@ public class Player_Controller : MonoBehaviour
     }
     
 
-    public void AddItem(string combined )
+    public void AddItem(string itemName )
     {
 
-        string[] parts = combined.Split(' ');
-        Item newItem = new Item(parts[0], parts[1]);
-        stat.items.Add(newItem);
-        ApplyItemEffect(newItem);
-        synergyManager.CheckSynergies();
+        if (!stat.items.ContainsKey(itemName))
+        {
+            stat.items[itemName] = 0;
+        }
+        stat.items[itemName]++;
+        ApplyItemEffect(itemName);
     }
 
-    void ApplyItemEffect(Item item)
+    void ApplyItemEffect(string item)
     {
-        switch (item.name)
+        switch (item)
         {
-            case "Turbo"://데미지 0.5 증가
-                stat.damage += 0.5f;
+            case "Turbo Engine"://데미지 0.5 증가
+                bulletStat.bulletDamage += 0.5f;
                 break;
-            case "Rocket"://연사 30% 증가
+            case "Rocket Engine"://연사 30% 증가
                 stat.tear *= 1.3f;
                 break;
-            case "Jet"://행운 1 증가
-                stat.luck += 1;
+            case "Jet Engine"://행운 1 증가
+                bulletStat.luck += 1;
                 break;
-            case "Poison":// 탄환에 독속성 부여 (10% 확률 공격력 * 10/행운 만큼의 추가 피해, 다만 공격력의 100%까지만)
+            case "Poison Shot":// 탄환에 독속성 부여 (10% 확률 공격력 * 10/행운 만큼의 추가 피해, 다만 공격력의 100%까지만)
                 
                 break;
-            case "Ruster"://데미지 7 증가 연사 0.5로 떨어짐
-                stat.damage += 7;
+            case "Ruster Cannon"://데미지 7 증가 연사 0.5로 떨어짐
+                bulletStat.bulletDamage += 7;
                 stat.tear = 0.5f;
                 break;
-            case "Electric"://탄환이 적에게 맞으면 주변 3명에게 현재 데미지의 30% 해당하는  피해를 줌
-                // 스플래시 플래그
-                break;
-            case "Tripple":// 3방향 발사 
+            
+            case "Triple Cannon":// 3방향 발사 
                 
                 break;
-            case "Sharp":
+            case "Sharp Shot":
                 // 관통 플래그
                 break;
-            case "Mini":
-                stat.damage *= 0.3f;
+            case "Mini Shot":
+                bulletStat.bulletDamage *= 0.3f;
                 stat.tear += 10f;
                 break;
-            case "Super":
+            case "Super Shot":
                 // 10번째 탄환 강화
                 break;
         }
