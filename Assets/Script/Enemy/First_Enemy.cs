@@ -26,13 +26,18 @@ public class First_Enemy : Enemy
         {
             yield return new WaitForSeconds(interval);
             interval = Random.Range(minInterval, maxInterval);
-            animator.SetTrigger("attack");
+            animator.SetBool("attack", true);
         }
     }
 
     public override void Shoot()
     {
         Instantiate(bulletPrefab, new Vector3(transform.position.x - 0.5f, transform.position.y + 0.5f, transform.position.z), transform.rotation);
+    }
+
+    public override void EndAttack()
+    {
+        animator.SetBool("attack", false);
     }
 
     public override void GetDamage(int damage)

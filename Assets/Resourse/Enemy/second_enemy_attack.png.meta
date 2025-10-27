@@ -1,0 +1,1201 @@
+fileFormatVersion: 2
+guid: b6a57d6a09d42b141b3c23b3efa11875
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7329627408105303102
+    second: second_enemy_attack_0
+  - first:
+      213: 8835918619562975255
+    second: second_enemy_attack_1
+  - first:
+      213: -2146567974475036364
+    second: second_enemy_attack_2
+  - first:
+      213: 919187414114774246
+    second: second_enemy_attack_3
+  - first:
+      213: 408022998562998949
+    second: second_enemy_attack_4
+  - first:
+      213: 9014419595764946819
+    second: second_enemy_attack_5
+  - first:
+      213: -3674024837269223745
+    second: second_enemy_attack_6
+  - first:
+      213: -3640317390146854500
+    second: second_enemy_attack_7
+  - first:
+      213: -5206229780116348257
+    second: second_enemy_attack_8
+  - first:
+      213: 4871993651953940846
+    second: second_enemy_attack_9
+  - first:
+      213: -6592977214548253953
+    second: second_enemy_attack_10
+  - first:
+      213: 7964243963856527014
+    second: second_enemy_attack_11
+  - first:
+      213: 3003220315990534985
+    second: second_enemy_attack_12
+  - first:
+      213: 6911188837183356292
+    second: second_enemy_attack_13
+  - first:
+      213: -3810244213129470184
+    second: second_enemy_attack_14
+  - first:
+      213: 7925042257968859846
+    second: second_enemy_attack_15
+  - first:
+      213: -7964716064540300392
+    second: second_enemy_attack_16
+  - first:
+      213: -8655802350483238842
+    second: second_enemy_attack_17
+  - first:
+      213: 858911618392357895
+    second: second_enemy_attack_18
+  - first:
+      213: -3717307091409976429
+    second: second_enemy_attack_19
+  - first:
+      213: -3665628166830155173
+    second: second_enemy_attack_20
+  - first:
+      213: 6285179258724139630
+    second: second_enemy_attack_21
+  - first:
+      213: 6085605116511154662
+    second: second_enemy_attack_22
+  - first:
+      213: 883398958719979452
+    second: second_enemy_attack_23
+  - first:
+      213: -6513473147378658960
+    second: second_enemy_attack_24
+  - first:
+      213: 6139129098702942587
+    second: second_enemy_attack_25
+  - first:
+      213: -1337995468819967545
+    second: second_enemy_attack_26
+  - first:
+      213: -4443670530560747681
+    second: second_enemy_attack_27
+  - first:
+      213: 5033951125720711728
+    second: second_enemy_attack_28
+  - first:
+      213: -6697582470799785670
+    second: second_enemy_attack_29
+  - first:
+      213: 5736751536731135822
+    second: second_enemy_attack_30
+  - first:
+      213: 5589744149609950282
+    second: second_enemy_attack_31
+  - first:
+      213: 2983275210002436339
+    second: second_enemy_attack_32
+  - first:
+      213: 3573062221369717099
+    second: second_enemy_attack_33
+  - first:
+      213: -3185750461362205645
+    second: second_enemy_attack_34
+  - first:
+      213: 8779224907540830018
+    second: second_enemy_attack_35
+  - first:
+      213: -2729931686597353245
+    second: second_enemy_attack_36
+  - first:
+      213: 1474916944443652682
+    second: second_enemy_attack_37
+  - first:
+      213: 5252173237569987703
+    second: second_enemy_attack_38
+  - first:
+      213: -5701254686125967832
+    second: second_enemy_attack_39
+  - first:
+      213: 6138886363272130651
+    second: second_enemy_attack_40
+  - first:
+      213: -399366656364974265
+    second: second_enemy_attack_41
+  - first:
+      213: 7048893911634231422
+    second: second_enemy_attack_42
+  - first:
+      213: 3593407303539023116
+    second: second_enemy_attack_43
+  - first:
+      213: 2779043716938977825
+    second: second_enemy_attack_44
+  - first:
+      213: 6162008986600320396
+    second: second_enemy_attack_45
+  - first:
+      213: -7997417449335872140
+    second: second_enemy_attack_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: second_enemy_attack_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4398f2bdccbd532e0800000000000000
+      internalID: -2146567974475036364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec2254451c91cc00800000000000000
+      internalID: 919187414114774246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 387d3e5acd6a91d70800000000000000
+      internalID: 9014419595764946819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb60b9650ed330dc0800000000000000
+      internalID: -3674024837269223745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92ea194991cfb7b0800000000000000
+      internalID: -5206229780116348257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_19
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e693cacd96ccc9340800000000000000
+      internalID: 4871993651953940846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_20
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff26b9a872a0184a0800000000000000
+      internalID: -6592977214548253953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_21
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae973250bda68e60800000000000000
+      internalID: 7964243963856527014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_24
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94b2ad437f49da920800000000000000
+      internalID: 3003220315990534985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_25
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48d75ff51a979ef50800000000000000
+      internalID: 6911188837183356292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_36
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f1ee0631b4f1bc0800000000000000
+      internalID: -3810244213129470184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_38
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b6a3c20f4a77190800000000000000
+      internalID: -7964716064540300392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_39
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64094756f9960e780800000000000000
+      internalID: -8655802350483238842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_40
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c7bb3f0977beb00800000000000000
+      internalID: 858911618392357895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e62c7e94c31793750800000000000000
+      internalID: 6285179258724139630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e172fc4c99647450800000000000000
+      internalID: 6085605116511154662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf44792ca6724c00800000000000000
+      internalID: 883398958719979452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_9
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071137caeae7b95a0800000000000000
+      internalID: -6513473147378658960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_10
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b71f3768361923550800000000000000
+      internalID: 6139129098702942587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_11
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c157e9c53c7e6de0800000000000000
+      internalID: -1337995468819967545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_12
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f571e0f2239e452c0800000000000000
+      internalID: -4443670530560747681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_13
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 032c249b0ef2cd540800000000000000
+      internalID: 5033951125720711728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_14
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3188166a386d03a0800000000000000
+      internalID: -6697582470799785670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_15
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4f1987c0290d9f40800000000000000
+      internalID: 5736751536731135822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_16
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ca1d630b2c29d40800000000000000
+      internalID: 5589744149609950282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_17
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f09c675ff8b66920800000000000000
+      internalID: 2983275210002436339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_18
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b613c11d821169130800000000000000
+      internalID: 3573062221369717099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_22
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33c087f85d0f9c3d0800000000000000
+      internalID: -3185750461362205645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_23
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2479b310a8216d970800000000000000
+      internalID: 8779224907540830018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_26
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0284748955d1ad0800000000000000
+      internalID: -2729931686597353245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_27
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ab4c28525f77410800000000000000
+      internalID: 1474916944443652682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_28
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7742c2c7bb773e840800000000000000
+      internalID: 5252173237569987703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_29
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8263e6bc11311e0b0800000000000000
+      internalID: -5701254686125967832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_30
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5033574f94b13550800000000000000
+      internalID: 6138886363272130651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_31
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74fea38542a257af0800000000000000
+      internalID: -399366656364974265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_32
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e704f5e7aa3b2d160800000000000000
+      internalID: 7048893911634231422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_33
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ddcb467e85ed130800000000000000
+      internalID: 3593407303539023116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_34
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122dd6b5985219620800000000000000
+      internalID: 2779043716938977825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_35
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8da31d868ad38550800000000000000
+      internalID: 6162008986600320396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_37
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47523d3b337730190800000000000000
+      internalID: -7997417449335872140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_enemy_attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6469f704060e094498c555be87d3bb8
+      internalID: -7329627408105303102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 617c32c638060de4ab485e622ca033b7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      second_enemy_attack_0: -7329627408105303102
+      second_enemy_attack_1: 6285179258724139630
+      second_enemy_attack_10: 6139129098702942587
+      second_enemy_attack_11: -1337995468819967545
+      second_enemy_attack_12: -4443670530560747681
+      second_enemy_attack_13: 5033951125720711728
+      second_enemy_attack_14: -6697582470799785670
+      second_enemy_attack_15: 5736751536731135822
+      second_enemy_attack_16: 5589744149609950282
+      second_enemy_attack_17: 2983275210002436339
+      second_enemy_attack_18: 3573062221369717099
+      second_enemy_attack_19: 4871993651953940846
+      second_enemy_attack_2: -2146567974475036364
+      second_enemy_attack_20: -6592977214548253953
+      second_enemy_attack_21: 7964243963856527014
+      second_enemy_attack_22: -3185750461362205645
+      second_enemy_attack_23: 8779224907540830018
+      second_enemy_attack_24: 3003220315990534985
+      second_enemy_attack_25: 6911188837183356292
+      second_enemy_attack_26: -2729931686597353245
+      second_enemy_attack_27: 1474916944443652682
+      second_enemy_attack_28: 5252173237569987703
+      second_enemy_attack_29: -5701254686125967832
+      second_enemy_attack_3: 919187414114774246
+      second_enemy_attack_30: 6138886363272130651
+      second_enemy_attack_31: -399366656364974265
+      second_enemy_attack_32: 7048893911634231422
+      second_enemy_attack_33: 3593407303539023116
+      second_enemy_attack_34: 2779043716938977825
+      second_enemy_attack_35: 6162008986600320396
+      second_enemy_attack_36: -3810244213129470184
+      second_enemy_attack_37: -7997417449335872140
+      second_enemy_attack_38: -7964716064540300392
+      second_enemy_attack_39: -8655802350483238842
+      second_enemy_attack_4: 9014419595764946819
+      second_enemy_attack_40: 858911618392357895
+      second_enemy_attack_5: -3674024837269223745
+      second_enemy_attack_6: 6085605116511154662
+      second_enemy_attack_7: -5206229780116348257
+      second_enemy_attack_8: 883398958719979452
+      second_enemy_attack_9: -6513473147378658960
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

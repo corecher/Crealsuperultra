@@ -16,6 +16,7 @@ public abstract class Enemy : MonoBehaviour
 
     public abstract IEnumerator Attack();
     public abstract void Shoot();
+    public abstract void EndAttack();
     public abstract void GetDamage(int damage);
     public abstract void Dead();
     

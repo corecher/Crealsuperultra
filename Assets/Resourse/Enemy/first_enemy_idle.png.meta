@@ -3,23 +3,23 @@ guid: 31cc4e8cdcd763c4bbf311d950fa9f8a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -309328653092862884
-    second: first_enemy_0
+      213: -3921492511292867580
+    second: first_enemy_idle_0
   - first:
-      213: -5299535963810725707
-    second: first_enemy_1
+      213: -1040314457274939664
+    second: first_enemy_idle_1
   - first:
-      213: 5484836354017865334
-    second: first_enemy_2
+      213: -4078628677962057459
+    second: first_enemy_idle_2
   - first:
-      213: -7534363470716314113
-    second: first_enemy_3
+      213: 8060345606132006606
+    second: first_enemy_idle_3
   - first:
-      213: -1278221546072996845
-    second: first_enemy_4
+      213: 7449532811327915142
+    second: first_enemy_idle_4
   - first:
-      213: -4310563118157004489
-    second: first_enemy_5
+      213: 3381276053260986733
+    second: first_enemy_idle_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -87,7 +87,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: first_enemy_0
+      name: first_enemy_idle_0
       rect:
         serializedVersion: 2
-        x: 319
-        y: 255
-        width: 1090
-        height: 1186
+        x: 9
+        y: 7
+        width: 36
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c54cc899a3b05bbf0800000000000000
-      internalID: -309328653092862884
+      spriteID: 40cb803865f0499c0800000000000000
+      internalID: -3921492511292867580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: first_enemy_1
+      name: first_enemy_idle_1
       rect:
         serializedVersion: 2
-        x: 1919
-        y: 287
-        width: 1090
-        height: 1154
+        x: 59
+        y: 8
+        width: 36
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b087aa7e144476b0800000000000000
-      internalID: -5299535963810725707
+      spriteID: 0f68c6f438f0091f0800000000000000
+      internalID: -1040314457274939664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: first_enemy_2
+      name: first_enemy_idle_2
       rect:
         serializedVersion: 2
-        x: 3519
-        y: 351
-        width: 1090
-        height: 1122
+        x: 109
+        y: 10
+        width: 36
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 67e2264aa9d0e1c40800000000000000
-      internalID: 5484836354017865334
+      spriteID: d09b95fa3dcc567c0800000000000000
+      internalID: -4078628677962057459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: first_enemy_3
+      name: first_enemy_idle_3
       rect:
         serializedVersion: 2
-        x: 5119
-        y: 351
-        width: 1090
-        height: 1122
+        x: 159
+        y: 10
+        width: 36
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ffd56479750907790800000000000000
-      internalID: -7534363470716314113
+      spriteID: ecef06c8f991cdf60800000000000000
+      internalID: 8060345606132006606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: first_enemy_4
+      name: first_enemy_idle_4
       rect:
         serializedVersion: 2
-        x: 6719
-        y: 351
-        width: 1090
-        height: 1122
+        x: 209
+        y: 10
+        width: 36
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3148112b648d24ee0800000000000000
-      internalID: -1278221546072996845
+      spriteID: 68441d16f9e026760800000000000000
+      internalID: 7449532811327915142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: first_enemy_5
+      name: first_enemy_idle_5
       rect:
         serializedVersion: 2
-        x: 8319
-        y: 287
-        width: 1090
-        height: 1154
+        x: 259
+        y: 8
+        width: 36
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7310a50beadcd24c0800000000000000
-      internalID: -4310563118157004489
+      spriteID: d69e72ad7a4bcee20800000000000000
+      internalID: 3381276053260986733
       vertices: []
       indices: 
       edges: []
@@ -260,12 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      first_enemy_0: -309328653092862884
-      first_enemy_1: -5299535963810725707
-      first_enemy_2: 5484836354017865334
-      first_enemy_3: -7534363470716314113
-      first_enemy_4: -1278221546072996845
-      first_enemy_5: -4310563118157004489
+      first_enemy_idle_0: -3921492511292867580
+      first_enemy_idle_1: -1040314457274939664
+      first_enemy_idle_2: -4078628677962057459
+      first_enemy_idle_3: 8060345606132006606
+      first_enemy_idle_4: 7449532811327915142
+      first_enemy_idle_5: 3381276053260986733
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
