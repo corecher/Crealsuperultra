@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Player_Controller : MonoBehaviour
 {
-    [SerializeField] float playerSpeed;
+    
     Rigidbody2D rb;
 
     [SerializeField] PlayerStats stat;
@@ -20,6 +20,8 @@ public class Player_Controller : MonoBehaviour
 
     float fireInterval;
     float attackCooltime;
+
+    
 
      
     private SynergyManager synergyManager;
@@ -77,7 +79,7 @@ public class Player_Controller : MonoBehaviour
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
 
-        rb.linearVelocity = new Vector2(x, y).normalized * playerSpeed;
+        rb.linearVelocity = new Vector2(x, y).normalized * stat.moveSpeed;
 
     }
 

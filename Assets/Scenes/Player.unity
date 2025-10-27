@@ -702,7 +702,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 225764755}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 333503834}
+        m_TargetAssemblyTypeName: Player_Controller, Assembly-CSharp
+        m_MethodName: AddItem
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Rocket Engine
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &225764755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -772,7 +784,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb11f7296e54af64f9b75baf5271ff37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 5
   stat: {fileID: 11400000, guid: 74103e3497ed8b54585dee8bade5c242, type: 2}
   bullet: {fileID: 8219336535573571372, guid: cd8bca0b8e77d1343b0c056dbbde7de0, type: 3}
   hp: 0
@@ -955,7 +966,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 339651231}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 333503834}
+        m_TargetAssemblyTypeName: Player_Controller, Assembly-CSharp
+        m_MethodName: AddItem
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Poison Shot
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &339651231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1957,7 +1980,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 748099275}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 333503834}
+        m_TargetAssemblyTypeName: Player_Controller, Assembly-CSharp
+        m_MethodName: AddItem
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Jet Engine
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &748099275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2078,7 +2113,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 819730526}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 333503834}
+        m_TargetAssemblyTypeName: Player_Controller, Assembly-CSharp
+        m_MethodName: AddItem
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Ruster Cannon
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &819730526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2330,7 +2377,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: T
+          m_StringArgument: Turbo Engine
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &882635180
@@ -4625,7 +4672,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2101760141}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2101760141
 MonoBehaviour:
   m_ObjectHideFlags: 0

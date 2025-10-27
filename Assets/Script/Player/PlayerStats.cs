@@ -11,7 +11,7 @@ public class PlayerStats : ScriptableObject
     public float moveSpeed = 5f;
     public float damage;
 
-    public float delay { get { return (16 - tear * 1.3f); }}
+    
 
     public int maxLevel = 20;
 
