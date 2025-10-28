@@ -18,6 +18,7 @@ public class TalkManager : MonoBehaviour
     void Awake()
     {
         Talkmanager = this;
+        timer=maxTime;
     }
     private void Update()
     {
