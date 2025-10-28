@@ -57,7 +57,7 @@ public class WaveManager : MonoBehaviour
             enemyspCount--;
             enemyCount++;
             yield return new WaitForSeconds(5f);
-            int i=Random.Range(0,1); 
+            int i=Random.Range(0,3); 
             if(index>=posY.Count()-1) index=index%2;
             else index+=2;
             ii++;

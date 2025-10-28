@@ -372,7 +372,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy:
-  - {fileID: 2998488796770433647, guid: 5dbfb34a4e8022847a81a64ec4e02e28, type: 3}
+  - {fileID: 3418741331663788103, guid: 5dbfb34a4e8022847a81a64ec4e02e28, type: 3}
+  - {fileID: 926103721106501231, guid: 84694c95ceba8894fa13aa39bc0f0d61, type: 3}
+  - {fileID: 1844737826066426556, guid: 96f304bdeba2ef94ebe303ef6adb1da5, type: 3}
   posY: fcfffffffdfffffffeffffffffffffff0000000001000000020000000300000004000000
   posX: 02000000040000000600000008000000
   waveCount: 0
@@ -1074,7 +1076,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -2367863431406428325, guid: 18230555d82e92946a311c05c11b589d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
