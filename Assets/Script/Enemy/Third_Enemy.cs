@@ -47,7 +47,7 @@ public class Third_Enemy : Enemy
         animator.SetBool("attack", false);
     }
 
-    public override void GetDamage(int damage)
+    public override void GetDamage(float damage)
     {
         hp -= damage;
     }

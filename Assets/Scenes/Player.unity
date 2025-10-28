@@ -498,7 +498,7 @@ GameObject:
   - component: {fileID: 333503837}
   - component: {fileID: 333503836}
   - component: {fileID: 333503835}
-  - component: {fileID: 333503834}
+  - component: {fileID: 333503838}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -506,22 +506,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &333503834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 333503833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb11f7296e54af64f9b75baf5271ff37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stat: {fileID: 11400000, guid: 74103e3497ed8b54585dee8bade5c242, type: 2}
-  bulletStat: {fileID: 11400000, guid: 344ff560f090b0240aadc9d0e570e5ef, type: 2}
-  bullet: {fileID: 8219336535573571372, guid: cd8bca0b8e77d1343b0c056dbbde7de0, type: 3}
-  hp: 0
 --- !u!50 &333503835
 Rigidbody2D:
   serializedVersion: 5
@@ -619,6 +603,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &333503838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333503833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb11f7296e54af64f9b75baf5271ff37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stat: {fileID: 11400000, guid: 74103e3497ed8b54585dee8bade5c242, type: 2}
+  bulletStat: {fileID: 11400000, guid: 344ff560f090b0240aadc9d0e570e5ef, type: 2}
+  bullet: {fileID: 0}
+  hp: 0
 --- !u!1 &345691855
 GameObject:
   m_ObjectHideFlags: 0
@@ -2125,7 +2125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1499199829
 RectTransform:
   m_ObjectHideFlags: 0

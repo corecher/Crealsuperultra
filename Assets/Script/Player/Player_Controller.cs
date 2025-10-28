@@ -13,6 +13,9 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] BulletStats bulletStat;
     [SerializeField] GameObject bullet;
 
+    GameObject levelUp;
+    GameObject statSelect;
+
     public int hp;
     private int level;
     private int exp;
@@ -24,7 +27,7 @@ public class Player_Controller : MonoBehaviour
     float attackCooltime;
 
     private bool superShot;
-
+    
     
 
      
@@ -39,6 +42,8 @@ public class Player_Controller : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        levelUp = GameObject.Find("LevelUp");
+        statSelect = GameObject.Find("ItemSelectionWindow");
         hp = stat.maxHealth;
         
 
@@ -125,6 +130,14 @@ public class Player_Controller : MonoBehaviour
     void LevelUp()
     {
         level++;
+        if (level % 5 == 0)
+        {
+            statSelect.SetActive(true);
+        }
+        else
+        {
+            levelUp.SetActive(true);
+        }
     }
     
 
@@ -137,14 +150,16 @@ public class Player_Controller : MonoBehaviour
         }
         stat.items[itemName]++;
         ApplyItemEffect(itemName);
+        statSelect.SetActive(false);
     }
 
     void ApplyItemEffect(string item)
     {
         switch (item)
         {
-            case "Turbo Engine"://데미지 0.5 증가
-                bulletStat.bulletDamage += 0.5f;
+            case "Turbo Engine"://데미지 1 증가
+                bulletStat.bulletDamage += 1f;
+                Debug.Log("터보 엔진?!");
                 break;
             case "Rocket Engine"://연사 30% 증가
                 stat.tear *= 1.3f;
@@ -167,7 +182,7 @@ public class Player_Controller : MonoBehaviour
                 bulletStat.isSharp = true;
                 break;
             case "Mini Shot":
-                bulletStat.bulletDamage *= 0.3f;
+                bulletStat.bulletDamage*=0.3f;
                 stat.tear += 10f;
                 break;
             case "Super Shot":
