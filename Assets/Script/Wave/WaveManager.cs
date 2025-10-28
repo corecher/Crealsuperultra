@@ -23,7 +23,6 @@ public class WaveManager : MonoBehaviour
         WaveStart();
         else if(enemyspCount>0)
         WaveUpdate();
-        Debug.Log(index);
         WaveStop();
     }
     void WaveStart()
