@@ -617,8 +617,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stat: {fileID: 11400000, guid: 74103e3497ed8b54585dee8bade5c242, type: 2}
   bulletStat: {fileID: 11400000, guid: 344ff560f090b0240aadc9d0e570e5ef, type: 2}
-  bullet: {fileID: 0}
-  hp: 0
+  bullet: {fileID: 8219336535573571372, guid: cd8bca0b8e77d1343b0c056dbbde7de0, type: 3}
+  hp: 6
 --- !u!1 &345691855
 GameObject:
   m_ObjectHideFlags: 0
@@ -2281,7 +2281,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1587009569}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 333503838}
+        m_TargetAssemblyTypeName: Player_Controller, Assembly-CSharp
+        m_MethodName: AddItem
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Turbo Engine
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1587009569
 MonoBehaviour:
   m_ObjectHideFlags: 0
