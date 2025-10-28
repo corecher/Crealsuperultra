@@ -1,8 +1,10 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class First_Enemy : Enemy
+public class Third_Enemy : Enemy
 {
+    GameObject player;
     Coroutine attackCoroutine;
     Animator animator;
 
@@ -13,10 +15,13 @@ public class First_Enemy : Enemy
 
         animator = GetComponent<Animator>();
         attackCoroutine = StartCoroutine(Attack());
+
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void Update()
     {
+        transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, player.transform.position.y + 0.2f, 0), 0.01f);
         if (hp <= 0) Dead();
     }
 

@@ -5,7 +5,8 @@ public class Bullet : MonoBehaviour
 
     [SerializeField] float speed;
     [SerializeField] float destroyTime;
-    [SerializeField] int wave; //              GameManager.instance.wave     ü
+    [SerializeField] int wave; //���� �������� GameManager.instance.wave�� ��ü
+
 
     void Start()
     {

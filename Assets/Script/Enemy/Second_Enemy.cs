@@ -1,14 +1,14 @@
 using System.Collections;
 using UnityEngine;
 
-public class First_Enemy : Enemy
+public class Second_Enemy : Enemy
 {
     Coroutine attackCoroutine;
     Animator animator;
 
     private void Start()
     {
-        quality = (wave > 10) ? Random.Range(1, 3) : Random.Range(1, 4);//병합 과정에서 GameManager.instance.wave로 대체
+        quality = (wave > 10) ? Random.Range(1, 3) : Random.Range(1, 4); //병합 과정에서 GameManager.instance.wave로 대체
         hp = (hp + wave - 1) * quality; //병합 과정에서 GameManager.instance.wave로 대체
 
         animator = GetComponent<Animator>();
@@ -26,13 +26,13 @@ public class First_Enemy : Enemy
         {
             yield return new WaitForSeconds(interval);
             interval = Random.Range(minInterval, maxInterval);
-            animator.SetBool("attack", true);
+            animator.SetTrigger("attack");
         }
     }
 
     public override void Shoot()
     {
-        Instantiate(bulletPrefab, new Vector3(transform.position.x - 0.5f, transform.position.y + 0.5f, transform.position.z), transform.rotation);
+        Instantiate(bulletPrefab, new Vector3(transform.position.x - 0.5f, transform.position.y, transform.position.z), transform.rotation);
     }
 
     public override void EndAttack()
