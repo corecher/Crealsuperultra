@@ -23,7 +23,7 @@ public class Player_Controller : MonoBehaviour
     float fireInterval;
     float attackCooltime;
 
-
+    private bool superShot;
 
     
 
@@ -90,11 +90,16 @@ public class Player_Controller : MonoBehaviour
 
     IEnumerator Fire()
     {
+        int bulletcnt = 0;
         while (attackDown)
         {
+            if (superShot&&bulletcnt % 10 == 0) bulletStat.isSuper = true;//슈퍼샷
             GameObject b = Instantiate(bullet, transform.position, Quaternion.identity);
             b.GetComponent<Player_bullet>().bulletstat = bulletStat;
+            bulletcnt++;
+            bulletStat.isSuper = false;
             yield return new WaitForSeconds(fireInterval);
+            
         }
 
         fireCoroutine = null;
@@ -148,7 +153,7 @@ public class Player_Controller : MonoBehaviour
                 bulletStat.luck += 1;
                 break;
             case "Poison Shot":// 탄환에 독속성 부여 (10% 확률 공격력 * 10/행운 만큼의 추가 피해, 다만 공격력의 100%까지만)
-                
+                bulletStat.isPoison = true;
                 break;
             case "Ruster Cannon"://데미지 7 증가 연사 0.5로 떨어짐
                 bulletStat.bulletDamage += 7;
@@ -159,14 +164,14 @@ public class Player_Controller : MonoBehaviour
                 
                 break;
             case "Sharp Shot":
-                // 관통 플래그
+                bulletStat.isSharp = true;
                 break;
             case "Mini Shot":
                 bulletStat.bulletDamage *= 0.3f;
                 stat.tear += 10f;
                 break;
             case "Super Shot":
-                // 10번째 탄환 강화
+                superShot = true;
                 break;
         }
     }
