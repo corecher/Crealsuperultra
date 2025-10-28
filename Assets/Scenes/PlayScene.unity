@@ -1091,7 +1091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stat: {fileID: 11400000, guid: 74103e3497ed8b54585dee8bade5c242, type: 2}
-  bulletStat: {fileID: 0}
+  bulletStat: {fileID: 11400000, guid: 344ff560f090b0240aadc9d0e570e5ef, type: 2}
   bullet: {fileID: 8219336535573571372, guid: cd8bca0b8e77d1343b0c056dbbde7de0, type: 3}
   hp: 0
 --- !u!50 &460418724
