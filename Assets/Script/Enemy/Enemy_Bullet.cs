@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] float destroyTime;
     [SerializeField] int wave; //���� �������� GameManager.instance.wave�� ��ü
-    [SerializeField]private Player_Controller player_Controller;
+    [SerializeField] private Player_Controller player_Controller;
 
     void Start()
     {

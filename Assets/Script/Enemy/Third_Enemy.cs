@@ -39,7 +39,7 @@ public class Third_Enemy : Enemy
 
     public override void Shoot()
     {
-        Instantiate(bulletPrefab, new Vector3(transform.position.x - 0.5f, transform.position.y + 0.5f, transform.position.z), transform.rotation);
+        Instantiate(bulletPrefab, new Vector3(transform.position.x - 1.0f, transform.position.y - 0.2f, 0), transform.rotation);
     }
 
     public override void EndAttack()

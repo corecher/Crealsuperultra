@@ -127,7 +127,7 @@ MonoBehaviour:
   maxInterval: 5
   interval: 1
   wave: 0
-  bulletPrefab: {fileID: 682532675974285854, guid: 29459c4db08efa64daf925fa8675624b, type: 3}
+  bulletPrefab: {fileID: 3723267389682970418, guid: 190c034c89f8a1545a5238ae7663f5e9, type: 3}
 --- !u!95 &1353826078677839645
 Animator:
   serializedVersion: 7
