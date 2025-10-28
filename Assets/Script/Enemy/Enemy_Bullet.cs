@@ -5,10 +5,13 @@ public class Bullet : MonoBehaviour
 
     [SerializeField] float speed;
     [SerializeField] float destroyTime;
-    [SerializeField] int wave; //º´ÇÕ °úÁ¤¿¡¼­ GameManager.instance.wave·Î ´ëÃ¼
+    [SerializeField] int wave; //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ GameManager.instance.waveï¿½ï¿½ ï¿½ï¿½Ã¼
+    [SerializeField]private Player_Controller player_Controller;
 
     void Start()
     {
+        GameObject player = GameObject.Find("Player");
+        player_Controller = GetComponent<Player_Controller>();
         Destroy(gameObject, destroyTime);
     }
 
@@ -21,8 +24,8 @@ public class Bullet : MonoBehaviour
     {
         if (player.CompareTag("Player"))
         {
-            Debug.Log("ÇÃ·¹ÀÌ¾î hp -1 ÇÏÇÏ");
-            //player.GetDamage((wave >= 10) ? 2 : 1);
+            Debug.Log(" Ã·  Ì¾  hp -1     ");
+            player_Controller.GetDamage((wave >= 10) ? 2 : 1);
         }
     }
 }
