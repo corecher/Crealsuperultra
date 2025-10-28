@@ -115,7 +115,7 @@ public class Player_Controller : MonoBehaviour
         hp -= damage;
     }
 
-    void ExpUp()
+    public void ExpUp()
     {
         exp++;
         LevelCheck(level);
