@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "PlayerStats", menuName = "GameData/PlayerStats")]
@@ -6,11 +7,11 @@ public class PlayerStats : ScriptableObject
     [Header("Base Stats")]
     public int maxHealth = 6;
     public float tear = 3;
-    public int luck = 5;
+    
     public float moveSpeed = 5f;
-    public int damage;
+    
 
-    public float delay { get { return (16 - tear * 1.3f); }}
+    
 
     public int maxLevel = 20;
 
@@ -18,6 +19,12 @@ public class PlayerStats : ScriptableObject
 
     [Header("Growth")]
     public AnimationCurve expCurve; // 레벨업 성장률 곡선
+
+
+
+     public Dictionary<string,int> items = new Dictionary<string,int>();
+
+    
 
     /// <summary>
     /// 누적 경험치 계산

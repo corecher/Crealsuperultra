@@ -5,23 +5,35 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Player_Controller : MonoBehaviour
 {
-    [SerializeField] float playerSpeed;
+    
     Rigidbody2D rb;
 
     [SerializeField] PlayerStats stat;
+
+    [SerializeField] BulletStats bulletStat;
     [SerializeField] GameObject bullet;
 
     public int hp;
     private int level;
     private int exp;
+
     private bool attackDown;
     private Coroutine fireCoroutine;
 
     float fireInterval;
     float attackCooltime;
 
-     
 
+
+    
+
+     
+    //private SynergyManager synergyManager;
+
+    void Start()
+    {
+        
+    }
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -71,7 +83,7 @@ public class Player_Controller : MonoBehaviour
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
 
-        rb.linearVelocity = new Vector2(x, y).normalized * playerSpeed;
+        rb.linearVelocity = new Vector2(x, y).normalized * stat.moveSpeed;
 
     }
 
@@ -81,30 +93,81 @@ public class Player_Controller : MonoBehaviour
         while (attackDown)
         {
             GameObject b = Instantiate(bullet, transform.position, Quaternion.identity);
-            
+            b.GetComponent<Player_bullet>().bulletstat = bulletStat;
             yield return new WaitForSeconds(fireInterval);
         }
 
         fireCoroutine = null;
     }
-    void UpgradeTear()
-    {
-        stat.tear++;
-    }
+    
     public void GetDamage(int damage)
     {
         hp -= damage;
     }
 
-    void LevelUp()
+    void ExpUp()
     {
-        level++;
+        exp++;
+        LevelCheck(level);
     }
     void LevelCheck(int level)
     {
         if (stat.GetRequiredExpForNextLevel(level) <= exp && level < stat.maxLevel)
         {
             LevelUp();
+        }
+    }
+    void LevelUp()
+    {
+        level++;
+    }
+    
+
+    public void AddItem(string itemName )
+    {
+
+        if (!stat.items.ContainsKey(itemName))
+        {
+            stat.items[itemName] = 0;
+        }
+        stat.items[itemName]++;
+        ApplyItemEffect(itemName);
+    }
+
+    void ApplyItemEffect(string item)
+    {
+        switch (item)
+        {
+            case "Turbo Engine"://데미지 0.5 증가
+                bulletStat.bulletDamage += 0.5f;
+                break;
+            case "Rocket Engine"://연사 30% 증가
+                stat.tear *= 1.3f;
+                break;
+            case "Jet Engine"://행운 1 증가
+                bulletStat.luck += 1;
+                break;
+            case "Poison Shot":// 탄환에 독속성 부여 (10% 확률 공격력 * 10/행운 만큼의 추가 피해, 다만 공격력의 100%까지만)
+                
+                break;
+            case "Ruster Cannon"://데미지 7 증가 연사 0.5로 떨어짐
+                bulletStat.bulletDamage += 7;
+                stat.tear = 0.5f;
+                break;
+            
+            case "Triple Cannon":// 3방향 발사 
+                
+                break;
+            case "Sharp Shot":
+                // 관통 플래그
+                break;
+            case "Mini Shot":
+                bulletStat.bulletDamage *= 0.3f;
+                stat.tear += 10f;
+                break;
+            case "Super Shot":
+                // 10번째 탄환 강화
+                break;
         }
     }
     
