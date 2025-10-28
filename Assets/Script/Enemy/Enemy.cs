@@ -10,14 +10,14 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField] public float minInterval;
     [SerializeField] public float maxInterval;
     [SerializeField] public float interval;
-    [SerializeField] public int wave; //º´ÇÕ °úÁ¤¿¡¼­ GameManager.instance.wave·Î ´ëÃ¼
+    [SerializeField] public int wave; //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ GameManager.instance.waveï¿½ï¿½ ï¿½ï¿½Ã¼
 
     public Bullet bulletPrefab;
 
     public abstract IEnumerator Attack();
     public abstract void Shoot();
     public abstract void EndAttack();
-    public abstract void GetDamage(int damage);
+    public abstract void GetDamage(float damage);
     public abstract void Dead();
     
 }

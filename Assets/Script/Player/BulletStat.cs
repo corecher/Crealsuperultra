@@ -5,8 +5,8 @@ public class BulletStats : ScriptableObject
 {
     public float bulletDamage;
     public bool isPoison;
-    public bool isSuper;
+    
     public bool isSharp;
-
+    public bool isSuper;
     public int luck = 5;
 }
