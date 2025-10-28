@@ -5,11 +5,13 @@ public class Second_Enemy : Enemy
 {
     Coroutine attackCoroutine;
     Animator animator;
-
+    private WaveManager waveManager;
     private void Start()
     {
-        quality = (wave > 10) ? Random.Range(1, 3) : Random.Range(1, 4); //º´ÇÕ °úÁ¤¿¡¼­ GameManager.instance.wave·Î ´ëÃ¼
-        hp = (hp + wave - 1) * quality; //º´ÇÕ °úÁ¤¿¡¼­ GameManager.instance.wave·Î ´ëÃ¼
+        GameObject Waves = GameObject.Find("WaveManager");
+        waveManager = Waves.GetComponent<WaveManager>();
+        quality = (waveManager.waveCount > 10) ? Random.Range(1, 3) : Random.Range(1, 4); //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ GameManager.instance.waveï¿½ï¿½ ï¿½ï¿½Ã¼
+        hp = (hp + waveManager.waveCount - 1) * quality; //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ GameManager.instance.waveï¿½ï¿½ ï¿½ï¿½Ã¼
 
         animator = GetComponent<Animator>();
         attackCoroutine = StartCoroutine(Attack());
