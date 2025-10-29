@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e84d4fa4700f2e4d9bf0a1c68a1657c, type: 3}
   m_Name: PlayerStats
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 101
   tear: 3
-  luck: 5
   moveSpeed: 5
-  damage: 0
   maxLevel: 20
+  maxExp: 550
   expCurve:
     serializedVersion: 2
     m_Curve:
@@ -42,4 +41,3 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  items: []
