@@ -6,6 +6,7 @@ public class Second_Enemy : Enemy
     Coroutine attackCoroutine;
     Animator animator;
     private WaveManager waveManager;
+    private bool dead=true;
     private void Start()
     {
         GameObject Waves = GameObject.Find("WaveManager");
@@ -52,5 +53,10 @@ public class Second_Enemy : Enemy
         if (attackCoroutine != null) StopCoroutine(attackCoroutine);
         animator.SetTrigger("dead");
         Destroy(gameObject, 1f);
+        if(dead)
+        {
+            waveManager.enemyCount--;
+            dead=false;
+        }
     }
 }

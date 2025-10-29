@@ -12,13 +12,14 @@ public class WaveManager : MonoBehaviour
     public int[] posX=new int[4]{2,4,6,8};
     public int waveCount=0;
     public int enemyspCount=0;
-    public int enemyCount=0;
+    public int enemyCount=1;
     private int index=0;
     private bool WaveState=true;
     private float timer=0f;
     private int ii=0;
     void Update()
     {
+        if(enemyCount==0&&enemyspCount==0) WaveState=true;
         if(WaveState)
         WaveStart();
         else if(enemyspCount>0)

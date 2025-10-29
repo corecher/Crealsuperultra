@@ -513,7 +513,7 @@ MonoBehaviour:
   posX: 02000000040000000600000008000000
   waveCount: 0
   enemyspCount: 0
-  enemyCount: 0
+  enemyCount: 1
 --- !u!1 &238150044
 GameObject:
   m_ObjectHideFlags: 0

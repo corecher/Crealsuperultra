@@ -19,7 +19,7 @@ public class Player_bullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        float damage = bulletstat.bulletDamage;
+        float damage = bulletstat.bulletDamage+15;
         //포이즌 샷
         if (bulletstat.isPoison && Random.value <= 0.1f)
         {
