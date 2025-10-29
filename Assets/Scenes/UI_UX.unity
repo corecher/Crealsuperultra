@@ -340,7 +340,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &257245963
 RectTransform:
   m_ObjectHideFlags: 0
@@ -528,7 +528,7 @@ MonoBehaviour:
   mainMenu: {fileID: 257245962}
   help: {fileID: 1308307290}
   die: {fileID: 1966378951}
-  state: 0
+  state: 1
 --- !u!4 &337258119
 Transform:
   m_ObjectHideFlags: 0
@@ -1288,7 +1288,6 @@ MonoBehaviour:
   typingSpeed: 0.1
   currentLineIndex: 0
   maxTime: 3
-  reset: {fileID: 337258118}
 --- !u!114 &675711747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2926,7 +2925,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1966378952
 RectTransform:
   m_ObjectHideFlags: 0

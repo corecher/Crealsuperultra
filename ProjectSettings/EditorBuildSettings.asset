@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlayScene.unity
     guid: c41d70f8e42fa534b998f2edab558772
+  - enabled: 1
+    path: Assets/Scenes/Dead.unity
+    guid: 8558395338b432d4694ec169138dcde9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

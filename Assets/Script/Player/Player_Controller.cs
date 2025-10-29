@@ -17,7 +17,7 @@ public class Player_Controller : MonoBehaviour
     GameObject statSelect;
 
     public int hp;
-    private int level;
+    public int level;
     private int exp;
 
     private bool attackDown;

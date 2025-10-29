@@ -1,7 +1,8 @@
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine.UI;
 using UnityEngine;
-using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class Heart : MonoBehaviour
 {
@@ -15,12 +16,18 @@ public class Heart : MonoBehaviour
     }
     void Update()
     {
-        switch(player_Controller.hp)
+        HeartChange();
+        
+    }
+    void HeartChange()
+    {
+     if(player_Controller.hp>=0)
+     switch(player_Controller.hp)
         {
            case 0: for(int i=0;i<Hearts.Count;i++)
            {
                 Hearts[i].sprite = images[0];
-           } break;
+           } StartCoroutine(GameOver());break;
            case 1: Hearts[0].sprite = images[1];
            for(int i=1;i<Hearts.Count;i++)
            {
@@ -52,5 +59,10 @@ public class Heart : MonoBehaviour
                 Hearts[i].sprite = images[2];
            } break;
         }
+    }
+    IEnumerator GameOver()
+    {
+      yield return new WaitForSeconds(2f);
+      SceneManager.LoadScene("Dead");
     }
 }

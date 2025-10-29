@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using System.Threading;
+using UnityEngine.SceneManagement;
 public class TalkManager : MonoBehaviour
 {
     public static TalkManager Talkmanager;
@@ -14,7 +15,6 @@ public class TalkManager : MonoBehaviour
     private bool isTyping = false;
     private float timer=0f;
     [SerializeField]private float maxTime=5f;
-    public Reset reset;
     void Awake()
     {
         Talkmanager = this;
@@ -45,8 +45,8 @@ public class TalkManager : MonoBehaviour
                 }
                 else
                 {
-                    reset.MainMenu();
                     Debug.Log("대화 종료");
+                    SceneManager.LoadScene("UI_UX");
                     return;
                 }
             }
