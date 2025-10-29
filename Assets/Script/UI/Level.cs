@@ -14,6 +14,6 @@ public class Level_UI : MonoBehaviour
     }
     void Update()
     {
-        Lev.fillAmount=0.05f*player_Controller.level;
+        Lev.fillAmount=player_Controller.exp/player_Controller.stat.GetRequiredExpForNextLevel(player_Controller.level);
     }
 }

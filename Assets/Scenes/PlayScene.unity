@@ -788,7 +788,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 294651820}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 460418723}
+        m_TargetAssemblyTypeName: Player_Controller, Assembly-CSharp
+        m_MethodName: PowerUp
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &294651820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -897,7 +909,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uACF5\uACA9\uB825 \uC99D\uAC00"
+  m_Text: "\uC5F0\uC0AC \uC99D\uAC00"
 --- !u!222 &313651281
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1106,6 +1118,8 @@ MonoBehaviour:
   stat: {fileID: 11400000, guid: 74103e3497ed8b54585dee8bade5c242, type: 2}
   bulletStat: {fileID: 11400000, guid: 344ff560f090b0240aadc9d0e570e5ef, type: 2}
   bullet: {fileID: 8219336535573571372, guid: cd8bca0b8e77d1343b0c056dbbde7de0, type: 3}
+  levelUp: {fileID: 238150044}
+  statSelect: {fileID: 601184534}
   hp: 0
   level: 0
 --- !u!50 &460418724
@@ -1337,7 +1351,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 490895047}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 460418723}
+        m_TargetAssemblyTypeName: Player_Controller, Assembly-CSharp
+        m_MethodName: AddItem
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Rocket Engine
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &490895047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1546,7 +1572,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 566682356}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 460418723}
+        m_TargetAssemblyTypeName: Player_Controller, Assembly-CSharp
+        m_MethodName: AddItem
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Jet Engine
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &566682356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1680,7 +1718,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 575269676}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 460418723}
+        m_TargetAssemblyTypeName: Player_Controller, Assembly-CSharp
+        m_MethodName: PowerUp
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &575269676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1955,7 +2005,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 730211112}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 460418723}
+        m_TargetAssemblyTypeName: Player_Controller, Assembly-CSharp
+        m_MethodName: PowerUp
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &730211112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2152,7 +2214,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uD130\uBCF4 \uCE90\uB17C"
+  m_Text: "\uD130\uBCF4 \uC5D4\uC9C4"
 --- !u!222 &800881768
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2645,7 +2707,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uACF5\uACA9\uB825 \uC99D\uAC00"
+  m_Text: "\uCCB4\uB825 \uD68C\uBCF5"
 --- !u!222 &1063734450
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3020,7 +3082,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uD130\uBCF4 \uCE90\uB17C"
+  m_Text: "\uC81C\uD2B8 \uC5D4\uC9C4"
 --- !u!222 &1537261766
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3174,7 +3236,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uD130\uBCF4 \uCE90\uB17C"
+  m_Text: "\uB85C\uCF13 \uC5D4\uC9C4"
 --- !u!222 &1612893157
 CanvasRenderer:
   m_ObjectHideFlags: 0

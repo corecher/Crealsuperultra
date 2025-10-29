@@ -12,6 +12,7 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField] public float interval;
     [SerializeField] public int wave; //���� �������� GameManager.instance.wave�� ��ü
 
+    public Player_Controller playerController;
     public Bullet bulletPrefab;
 
     public abstract IEnumerator Attack();

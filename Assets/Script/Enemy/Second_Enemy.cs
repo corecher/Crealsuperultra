@@ -16,6 +16,7 @@ public class Second_Enemy : Enemy
 
         animator = GetComponent<Animator>();
         attackCoroutine = StartCoroutine(Attack());
+        playerController = GameObject.Find("Player").GetComponent<Player_Controller>();
     }
 
     private void Update()
@@ -53,10 +54,11 @@ public class Second_Enemy : Enemy
         if (attackCoroutine != null) StopCoroutine(attackCoroutine);
         animator.SetTrigger("dead");
         Destroy(gameObject, 1f);
-        if(dead)
+        if (dead)
         {
             waveManager.enemyCount--;
-            dead=false;
+            dead = false;
+            playerController.ExpUp(2);
         }
     }
 }

@@ -15,7 +15,7 @@ public class PlayerStats : ScriptableObject
 
     public int maxLevel = 20;
 
-    public const float maxExp = 10000f;
+    public float maxExp = 1000f;
 
     [Header("Growth")]
     public AnimationCurve expCurve; // 레벨업 성장률 곡선

@@ -8,17 +8,17 @@ public class Player_Controller : MonoBehaviour
     
     Rigidbody2D rb;
 
-    [SerializeField] PlayerStats stat;
+    [SerializeField] public PlayerStats stat;
 
     [SerializeField] BulletStats bulletStat;
     [SerializeField] GameObject bullet;
 
-    GameObject levelUp;
-    GameObject statSelect;
+    [SerializeField]GameObject levelUp;
+    [SerializeField]GameObject statSelect;
 
     public int hp;
     public int level;
-    private int exp;
+    public int exp;
 
     private bool attackDown;
     private Coroutine fireCoroutine;
@@ -42,8 +42,7 @@ public class Player_Controller : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        levelUp = GameObject.Find("LevelUp");
-        statSelect = GameObject.Find("ItemSelectionWindow");
+        
         hp = stat.maxHealth;
         
 
@@ -115,9 +114,10 @@ public class Player_Controller : MonoBehaviour
         hp -= damage;
     }
 
-    public void ExpUp()
+    public void ExpUp(int exp)
     {
-        exp++;
+        this.exp+=exp;
+        
         LevelCheck(level);
     }
     void LevelCheck(int level)
@@ -125,10 +125,31 @@ public class Player_Controller : MonoBehaviour
         if (stat.GetRequiredExpForNextLevel(level) <= exp && level < stat.maxLevel)
         {
             LevelUp();
+            exp = 0;
         }
+    }
+
+    public void PowerUp(int index)
+    {
+        switch (index)
+        {
+            case 0:
+                stat.maxHealth++;
+                break;
+            case 1:
+                hp++;
+                break;
+            case 2:
+                stat.tear += 0.1f;
+                break;
+        }
+        levelUp.SetActive(false);
+
     }
     void LevelUp()
     {
+        Debug.Log("와 레벨업!");
+        
         level++;
         if (level % 5 == 0)
         {
@@ -139,9 +160,9 @@ public class Player_Controller : MonoBehaviour
             levelUp.SetActive(true);
         }
     }
-    
 
-    public void AddItem(string itemName )
+
+    public void AddItem(string itemName)
     {
 
         if (!stat.items.ContainsKey(itemName))
@@ -151,6 +172,7 @@ public class Player_Controller : MonoBehaviour
         stat.items[itemName]++;
         ApplyItemEffect(itemName);
         statSelect.SetActive(false);
+        
     }
 
     void ApplyItemEffect(string item)
