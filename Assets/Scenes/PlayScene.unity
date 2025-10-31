@@ -1132,7 +1132,7 @@ MonoBehaviour:
   bullet: {fileID: 8219336535573571372, guid: cd8bca0b8e77d1343b0c056dbbde7de0, type: 3}
   levelUp: {fileID: 238150044}
   statSelect: {fileID: 601184534}
-  hp: 0
+  hp: 6
   level: 0
   exp: 0
 --- !u!50 &460418724

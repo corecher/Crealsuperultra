@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532738a02f96ba54bbfd0acea2c35125, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletstat: {fileID: 0}
+  bulletstat: {fileID: 11400000, guid: 344ff560f090b0240aadc9d0e570e5ef, type: 2}
 --- !u!58 &347605010078361773
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -99,6 +99,7 @@ public class Player_Controller : MonoBehaviour
         {
             if (superShot&&bulletcnt % 10 == 0) bulletStat.isSuper = true;//슈퍼샷
             GameObject b = Instantiate(bullet, transform.position, Quaternion.identity);
+            Debug.Log("Fire");
             b.GetComponent<Player_bullet>().bulletstat = bulletStat;
             bulletcnt++;
             bulletStat.isSuper = false;
